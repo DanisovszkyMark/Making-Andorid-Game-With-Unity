@@ -1,0 +1,12 @@
+**/.vs/**
+**/Library/**
+**/Logs/**
+**/obj/**
+**/Assets/Audio
+**/Assets/Audio.meta
+**/Assets/Editor
+**/Assets/Editor.meta
+**/Assets/Prefabs
+**/Assets/Prefabs.meta
+**/Assets/Runtime
+**/Assets/Runtime.meta

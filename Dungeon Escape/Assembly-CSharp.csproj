@@ -63,8 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MossGiant.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Spider.cs" />
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>G:/Munka/Projektek/Making Andorid Game/Making-Andorid-Game/Dungeon Escape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

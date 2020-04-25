@@ -17,6 +17,6 @@ public class Spider : Enemy
 
     public override void Update()
     {
-        Debug.Log("SpiderUpdate called.");
+        // Debug.Log("SpiderUpdate called.");
     }
 }

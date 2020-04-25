@@ -13,6 +13,12 @@ public abstract class Enemy : MonoBehaviour
 	[SerializeField]
 	protected int gems;
 
+	[SerializeField]
+	protected Transform wayPointA;
+
+	[SerializeField]
+	protected Transform wayPointB;
+
 	public virtual void Attack()
     {
 		Debug.Log("BaseAttack Called.");

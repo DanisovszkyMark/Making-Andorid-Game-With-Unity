@@ -10,7 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     // The animator for the sword effects
     private Animator swordAnimator;
 
-    // To flipPlayer the sprite
+    // To flip Player sprite
     private SpriteRenderer playerSprite;
 
     // To flipPlayer the sword effect sprite

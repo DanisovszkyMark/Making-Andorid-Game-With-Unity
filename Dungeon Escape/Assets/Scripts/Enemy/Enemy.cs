@@ -8,7 +8,7 @@ public abstract class Enemy : MonoBehaviour
 	protected int health;
 
 	[SerializeField]
-	protected int speed;
+	protected float speed;
 
 	[SerializeField]
 	protected int gems;
@@ -19,13 +19,15 @@ public abstract class Enemy : MonoBehaviour
 	[SerializeField]
 	protected Transform wayPointB;
 
-	// TODO: Create an interface: IMoveable
+	// TODO: Create an interface: IAutomaticMoving
+	// TODO: Create EnemyAnimation class to handle animations
+	// The next target position
 	protected Vector3 currentWayPoint;
 
-	// 
+	// The enemy's animator
 	protected Animator enemyAnimator;
 
-	// 
+	// The enemy's sprite
 	protected SpriteRenderer enemySprite;
 
 	public void Start()

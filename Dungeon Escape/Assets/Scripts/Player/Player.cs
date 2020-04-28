@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // The rigidbody for the Player Object
+    // The player's rigidbody
     private Rigidbody2D rigidbody;
 
-    // Variables for the run
+    // Variable for the run
     [SerializeField]
     private float speed;
 
@@ -20,11 +20,9 @@ public class Player : MonoBehaviour
 
     private float groundDistance = 0.6f;
 
-    // Object for animations
+    // The player's Animation
     private PlayerAnimation playerAnimation;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         // Get reference to rigidbody
@@ -41,24 +39,27 @@ public class Player : MonoBehaviour
         this.moveHorizontal();
         this.attack();
 
+        // To developing
         this.DrawRay();
     }
 
     private void moveLeftAndRight()
     {
-        // Horizontal input for left / right
+        // Horizontal input for left / right ( a - d || <- - -> )
         // Raw for avoid the smooth
         float horizontalInput = Input.GetAxisRaw("Horizontal");
   
         // Only want to move on the x about the horizontalInput what can be -1, 0, 1
         this.rigidbody.velocity = new Vector2(horizontalInput * speed, this.rigidbody.velocity.y);
 
+        // Start the animations if it needed
         this.playerAnimation.move(horizontalInput);
         this.playerAnimation.flipPlayer(horizontalInput);
     }
 
     private void moveHorizontal()
     {
+        // TODO: Feature: double jumping
         if (this.isGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             this.jump();

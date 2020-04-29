@@ -2,8 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MossGiant : Enemy
+public class MossGiant : Enemy, IDamageable
 {
+    public int Health 
+    { 
+        get => throw new System.NotImplementedException();
+        set => throw new System.NotImplementedException();
+    }
+
+    public void Damage()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override void Init()
     {
         base.Init();
